@@ -14,6 +14,7 @@ env:
   PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
   REGION: ${{ secrets.GCP_REGION }}
   SERVICE: riverdroppublicsite2
+  SERVICE_ACCOUNT: ${{ secrets.GCP_SERVICE_ACCOUNT }}
 
 jobs:
   deploy:
@@ -38,5 +39,6 @@ jobs:
             --project="$PROJECT_ID" \
             --region="$REGION" \
             --source=. \
+            --service-account="$SERVICE_ACCOUNT" \
             --allow-unauthenticated \
             --quiet
