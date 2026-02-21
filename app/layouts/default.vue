@@ -4,7 +4,8 @@ const links = [
   { label: 'Pricing', to: '/pricing' },
   { label: 'Docs', to: '/docs' },
   { label: 'Blog', to: '/blog' },
-  { label: 'Changelog', to: '/changelog' }
+  { label: 'Changelog', to: '/changelog' },
+  { label: 'Classic Version', to: '/alt' }
 ]
 </script>
 
@@ -38,6 +39,7 @@ const links = [
         <div class="footer-links">
           <NuxtLink to="/docs">Docs</NuxtLink>
           <NuxtLink to="/changelog">Changelog</NuxtLink>
+          <NuxtLink to="/alt">Classic Version</NuxtLink>
         </div>
       </div>
     </footer>
